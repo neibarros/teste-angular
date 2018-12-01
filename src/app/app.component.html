@@ -1,75 +1,122 @@
-<div class="content">
-	<nav class="sidebar">
-		<div class="logo">
-			<img src="../assets/logo_atlas_horizontal-white.svg" alt="Logo Atlas" />
+<div class="container-fluid full-height">
+	<div class="row">
+		<div class="col-3">
+			<div class="sidebar">
+				<div class="row">
+					<div class="col">
+						<div class="logo">
+							<img src="../assets/logo_atlas_horizontal-white.svg" alt="Logo Atlas" />
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<div class="navs">
+							<ul class="nav-menu">
+								<li>
+									<a href="" class="nav-link">
+										<img src="../assets/ic_home.svg" alt="Icon Home" />
+										<span class="link-text">Lucros</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<div class="navs">
-			<ul class="nav-menu">
-				<li>
-					<a href="" class="nav-link">
-						<img src="../assets/ic_home.svg" alt="Icon Home" />
-						<span class="link-text">Lucros</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
-	<div class="contents">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md">
-					<div class="top-bar">
+		<div class="col-8 contents">
+			<div class="top-bar">
+				<div class="row">
+					<div class="col-3 offset-md-8">
 						<div class="user">
-							<img src="../assets/ic_person.svg" alt="Icon Home" />
+							<img src="../assets/ic_person.svg" alt="Icon Person" />
 							Manoel Neto
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-md">
-					<h3>Lucros</h3>
-					<p>Relatório de distribuição de lucro</p>
-				</div>
+			<div class="page-title">
+				<div class="row justify-content-between">
+					<div class="col">
+						<h1>Lucros</h1>
+						<p class="subtitle">Relatório de distribuição de lucro</p>
+					</div>
 
-				<div class="col-md">
-					<div class="search">
-						<input type="text" placeholder="Digite qualquer coisa da tabela">
-						<button class="btn-search">
-							<img src="../assets/ic_search_24px.svg" alt="Icon Search" />
-						</button>
+					<div class="col">
+						<div class="search">
+							<input type="text" class="form-search" placeholder="Digite qualquer coisa da tabela">
+							<button class="btn-search" type="button">
+								<img src="../assets/ic_search_24px.svg" alt="Icon Search" />
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-md">
+				<div class="col">
 					<div class="card">
 						<div class="card-title">
 							Distribuição de lucro (último mês)
 						</div>
 
 						<div class="card-body">
-							<table>
+							<table class="table">
 								<thead>
 									<tr>
 										<th>Data</th>
 										<th>Moeda</th>
-										<th>Rendimento</th>
-										<th>%</th>
-										<th>Saldo</th>
+										<th class="text-center">Rendimento</th>
+										<th class="text-center">%</th>
+										<th class="text-center">Saldo</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<td>08/06/18 16:14</td>
 										<td>BTC</td>
-										<td>+0.0000010 BTC</td>
-										<td>0.05%</td>
-										<td>0.25000000 BTC</td>
+										<td class="text-right">+0.0000010 BTC</td>
+										<td class="text-right">0.05%</td>
+										<td class="text-right">0.25000000 BTC</td>
+									</tr>
+									<tr>
+										<td>08/06/18 16:14</td>
+										<td>BTC</td>
+										<td class="text-right">+0.0000010 BTC</td>
+										<td class="text-right">0.05%</td>
+										<td class="text-right">0.25000000 BTC</td>
+									</tr>
+									<tr>
+										<td>08/06/18 16:14</td>
+										<td>BTC</td>
+										<td class="text-right">+0.0000010 BTC</td>
+										<td class="text-right">0.05%</td>
+										<td class="text-right">0.25000000 BTC</td>
+									</tr>
+									<tr>
+										<td>08/06/18 16:14</td>
+										<td>BTC</td>
+										<td class="text-right">+0.0000010 BTC</td>
+										<td class="text-right">0.05%</td>
+										<td class="text-right">0.25000000 BTC</td>
+									</tr>
+									<tr>
+										<td>08/06/18 16:14</td>
+										<td>BTC</td>
+										<td class="text-right">+0.0000010 BTC</td>
+										<td class="text-right">0.05%</td>
+										<td class="text-right">0.25000000 BTC</td>
+									</tr>
+									<tr>
+										<td>08/06/18 16:14</td>
+										<td>BTC</td>
+										<td class="text-right">+0.0000010 BTC</td>
+										<td class="text-right">0.05%</td>
+										<td class="text-right">0.25000000 BTC</td>
 									</tr>
 								</tbody>
 							</table>
@@ -79,12 +126,12 @@
 			</div>
 
 			<footer class="footer">
-				<div class="row">
-					<div class="col-md">
+				<div class="row align-items-center">
+					<div class="col copy">
 						Atlas Quantum @ 2018. All rights reserved
 					</div>
 
-					<div class="col-md">
+					<div class="col">
 						<ul class="social-icons">
 							<li><a href=""><img src="../assets/ic_facebook.svg" alt=""></a></li>
 							<li><a href=""><img src="../assets/ic_twitter.svg" alt=""></a></li>

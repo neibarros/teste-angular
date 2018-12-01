@@ -1,2 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/bootstrap-grid";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+@font-face {
+    font-family: 'Gilroy-extra-bold';
+    src: url('../src/assets/fonts/gilroy-extrabold-webfont.woff') format('woff2'),
+		 url('../src/assets/fonts/gilroy-extrabold-webfont.woff') format('woff');
+	font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background: #EDF3F0 url('../src/assets/background.svg') right bottom fixed no-repeat;
+}
+
+.col,
+[class*="col-"] {
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+::placeholder {
+    color: #9B9B9B;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #9B9B9B;
+}
+::-ms-input-placeholder {
+    color: #9B9B9B;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
