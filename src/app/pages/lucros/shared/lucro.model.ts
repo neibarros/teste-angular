@@ -3,6 +3,7 @@ export class Lucro {
 		public dateMoviment?: string,
 		public coin?: string,
 		public proft?: string,
-		public profitPercentage?: number
+		public profitPercentage?: number,
+		public balance?: string
 	) {}
 }

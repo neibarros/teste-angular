@@ -22,18 +22,7 @@ export class LucrosComponent implements OnInit {
 
 	get() {
 		this.lucroService.getAll().subscribe(
-			lucros => {
-				this.lucros = lucros.sort((a, b) => {
-					if (a.dateMoviment < b.dateMoviment) {
-						return 1;
-					}
-					if (a.dateMoviment > b.dateMoviment) {
-						return -1;
-					}
-					return 0;
-				});
-				console.log(this.lucros);
-			},
+			lucros => this.lucros = lucros,
 			error => alert('Erro ao carregar a lista')
 		);
 	}

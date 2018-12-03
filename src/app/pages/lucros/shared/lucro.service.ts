@@ -25,11 +25,27 @@ export class LucroService {
 	// PRIVATE METHODS
 
 	private jsonDataToEntries(jsonData: any[]): Lucro[] {
-		const lucros: Lucro[] = [];
+		let lucros: Lucro[] = [];
+		let balance = 0;
+
+		jsonData = jsonData.sort((a, b) => {
+			if (a.dateMoviment > b.dateMoviment) { return 1; }
+			if (a.dateMoviment < b.dateMoviment) { return -1; }
+			return 0;
+		});
 
 		jsonData.forEach(element => {
 			const lucro = Object.assign(new Lucro(), element);
+			balance += parseFloat(lucro.proft);
+			lucro.balance = balance.toFixed(6).toString();
+			lucro.profitPercentage = lucro.profitPercentage / 100;
 			lucros.push(lucro);
+		});
+
+		lucros = lucros.sort((a, b) => {
+			if (a.dateMoviment < b.dateMoviment) { return 1; }
+			if (a.dateMoviment > b.dateMoviment) { return -1; }
+			return 0;
 		});
 
 		return lucros;

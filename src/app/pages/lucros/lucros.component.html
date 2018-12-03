@@ -39,12 +39,8 @@
 							<td>{{ lucro.dateMoviment | date: 'dd/MM/yy hh:mm' }}</td>
 							<td>{{ lucro.coin }}</td>
 							<td>+{{ lucro.proft }} {{ lucro.coin }}</td>
-							<td>{{ lucro.profitPercentage }}</td>
-							<!-- <td>08/06/18 16:14</td>
-							<td>BTC</td>
-							<td class="text-right">+0.0000010 BTC</td>
-							<td class="text-right">0.05%</td>
-							<td class="text-right">0.25000000 BTC</td> -->
+							<td>{{ lucro.profitPercentage }}%</td>
+							<td>{{ lucro.balance }} {{ lucro.coin }}</td>
 						</tr>
 					</tbody>
 				</table>
